@@ -23,7 +23,8 @@ public class TestSeq{
             int[] arr = new int[N];
             for(int i=0; i<N; i++)
                 arr[i] = rd.nextInt();
-            Bitonic obj = new Bitonic(arr,0,arr.length,null);
+            Bitonic obj;
+            obj = new Bitonic(arr,0,arr.length,null);
             obj.sort();
             int last = arr[0];
             for(int i=1; i < N; i++){
